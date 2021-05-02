@@ -25,6 +25,6 @@ try :
 	print("Determinant : " , DET)
 	print("Adjoint of A :\n",DET*INV)
 
-# Singular matrixes don't have inverse i.e their Determinant is 0
+# Singular matrices don't have inverse i.e their Determinant is 0
 except:
 	print("You have entered a Singular Matrix!")
