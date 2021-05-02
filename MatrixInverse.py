@@ -7,7 +7,7 @@ try :
 	C = int(input("Enter the number of columns : "))
 	matrix = []
 
-	# Inputting Elements
+	# Getting elements as input from user
 	if R == C:
 		for i in range(R):
 		    r = []
@@ -15,12 +15,16 @@ try :
 		    	r.append(int(input("Enter Elements : ")))
 		    matrix.append(r)
 
+	# Converting the list into a Numpy Array
 	A = np.array(matrix)
 	print(A)
+	# I've found Determinant and Adjoint separately because that's how my teacher wants the answers written
+	#### Inverse = (1/Determinant)*Adjoint
 	DET = round(det(A))
+	INV = inv(A)
 	print("Determinant : " , DET)
-	print("adjA :\n",DET*inv(A))
+	print("Adjoint of A :\n",DET*INV)
 
-
+# Singular matrixes don't have inverse i.e their Determinant is 0
 except:
 	print("You have entered a Singular Matrix!")
