@@ -1,10 +1,12 @@
 import numpy as np
 
-# Input for Matrix A
+
+#### MATRIX A
 Ar = int(input("Enter the number of rows : "))
 Ac = int(input("Enter the number of columns : "))
 matrixA = []
-# For user input
+
+# Getting elements as input from user
 for i in range(Ar):
     r = []
     for j in range(Ac):
@@ -16,11 +18,12 @@ numA = np.array(matrixA)
 
 
 
-#Input for Matrix B
+#### MATRIX B
 Br = int(input("Enter the number of rows :"))
 Bc = int(input("Enter the number of columns :"))
 matrixB = []
-# For user input
+
+# Getting elements as input from user
 for k in range(Br):
     r = []
     for l in range(Bc):
@@ -35,8 +38,8 @@ numB = np.array(matrixB)
 # But it would only work if the number of colums for matrix A = number of rows of matrix B
 # Resultant matrix has number of rows of matrix A & number of columns of Matrix B
 if Ac == Br:
-	RESULT = np.matmul(numA,numB)
-	print("\nAnswer : \n",RESULT)
+    RESULT = np.matmul(numA,numB)
+    print("\nAnswer : \n",RESULT)
 
 else:
-	print("The matrices can't be Multiplied because their orders aren't compatible")
+    print("The matrices can't be Multiplied because their orders aren't compatible")

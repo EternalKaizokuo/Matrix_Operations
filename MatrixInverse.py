@@ -7,14 +7,15 @@ try :
 	C = int(input("Enter the number of columns : "))
 	matrix = []
 
-	# Getting elements as input from user
+	# Checking if rows and Columns are equal
+	# and getting elements as input from user
 	if R == C:
 		for i in range(R):
 		    r = []
 		    for j in range(C):
 		    	r.append(int(input("Enter Elements : ")))
 		    matrix.append(r)
-
+		
 	# Converting the list into a Numpy Array
 	A = np.array(matrix)
 	print('Matrix A :\n',A)
@@ -26,7 +27,7 @@ try :
 	print("Transpose of A:\n",A.T)
 	print("Determinant of A: " , DET)
 	print("Adjoint of A :\n",DET*INV)
-
-# Singular matrixes don't have inverse i.e their Determinant is 0
+	
+# Singular matrices don't have inverse i.e their Determinant is 0
 except:
 	print("You have entered a Singular Matrix!")
