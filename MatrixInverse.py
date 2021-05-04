@@ -17,12 +17,14 @@ try :
 
 	# Converting the list into a Numpy Array
 	A = np.array(matrix)
-	print(A)
+	print('Matrix A :\n',A)
+
 	# I've found Determinant and Adjoint separately because that's how my teacher wants the answers written
 	#### Inverse = (1/Determinant)*Adjoint
 	DET = round(det(A))
 	INV = inv(A)
-	print("Determinant : " , DET)
+	print("Transpose of A:\n",A.T)
+	print("Determinant of A: " , DET)
 	print("Adjoint of A :\n",DET*INV)
 
 # Singular matrixes don't have inverse i.e their Determinant is 0
