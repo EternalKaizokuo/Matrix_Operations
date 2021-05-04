@@ -15,7 +15,7 @@ try :
 		    for j in range(C):
 		    	r.append(int(input("Enter Elements : ")))
 		    matrix.append(r)
-		
+
 	# Converting the list into a Numpy Array
 	A = np.array(matrix)
 	print('Matrix A :\n',A)
@@ -27,7 +27,7 @@ try :
 	print("Transpose of A:\n",A.T)
 	print("Determinant of A: " , DET)
 	print("Adjoint of A :\n",DET*INV)
-	
+
 # Singular matrices don't have inverse i.e their Determinant is 0
 except:
 	print("You have entered a Singular Matrix!")
